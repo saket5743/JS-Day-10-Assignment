@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 10</title>
+</head>
+
+<body>
+    <script>
+        // Q1. Sum of 3 and 5 multiples under 1000.
+        let sum = 0;
+        for (let i = 1; i < 1000; i++) {
+            if (i % 3 == 0 && i % 5 == 0) {
+                sum += i
+            }
+        }
+        console.log(sum)
+
+        // Q2. Calculate the sum of all the numbers in the following array.
+        let numbersArray = [1, 13, 22, 123, 49]
+        let sum1 = 0
+        for (let i = 0; i < numbersArray.length; i++) {
+            sum1 += numbersArray[i]
+        }
+        console.log(sum1)
+
+        // Q3. Print the odd numbers from 7 to 31.
+        for (i = 7; i <= 31; i++) {
+            if (i % 2 !== 0) {
+                console.log(i)
+            }
+        }
+
+        // Q4. Check if a string contains the letter 'y'. Print 'yes' if it does and 'no' if it does not.
+        let myString = "exampleString";
+        let containsY = false;
+        for (let i = 0; i < myString.length; i++) {
+            if (myString[i] === 'y') {
+                containsY = true;
+                break;
+            }
+        }
+
+        if (containsY) {
+            console.log('yes');
+        } else {
+            console.log('no');
+        }
+
+        // Q5. Write a js code to print even numbers in given array.
+        let arr = [13, 23, 12, 45, 22, 48, 66, 100]
+        for (let abc of arr) {
+            if (abc % 2 == 0) {
+                console.log(abc)
+            }
+        }
+
+        // Q6. Write a js code to print a 2D array [[1,2],[3,4],[5,6]].
+        let twoDarray = [[1, 2], [3, 4], [5, 6]]
+        for (let i = 0; i < twoDarray.length; i++) {
+            let str = ''
+            for (let j = 0; j < twoDarray[i].length; j++) {
+                str += twoDarray[i][j] + '..'
+            }
+            console.log(str)
+        }
+    </script>
+</body>
+
+</html>
